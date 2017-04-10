@@ -11,7 +11,7 @@
 	<category>content</category>
 	<copyright>e107.sk</copyright>
 	<adminLinks>
-		<link url="admin_config.php" description="" icon="contact-icon.png" iconSmall="" icon128="" primary="true" >LAN_CONFIGURE</link>
+		<link url="admin_config.php" description="" icon="images/_icon_32.png" iconSmall="images/_icon_16.png" icon128="images/_icon_128.png" primary="true" >LAN_CONFIGURE</link>		<link url="admin_config.php" description="" icon="contact-icon.png" iconSmall="" icon128="" primary="true" >LAN_CONFIGURE</link>
 	</adminLinks>
 	<pluginPrefs>
 		<pref name='contact_name'>Company name</pref>
