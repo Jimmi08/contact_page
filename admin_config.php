@@ -10,7 +10,7 @@ if (!getperms('P'))
 }
 
 // e107::lan('contactinfo',true);
-
+e107::lan('contactpage', true);
 
 class contactpage_adminArea extends e_admin_dispatcher
 {
@@ -39,7 +39,7 @@ class contactpage_adminArea extends e_admin_dispatcher
 		'main/edit'	=> 'main/list'				
 	);	
 	
-	protected $menuTitle = 'Contact Page';
+	protected $menuTitle = LAN_CP_NAME;
 }
 
 
@@ -49,7 +49,7 @@ class contactpage_adminArea extends e_admin_dispatcher
 class contactpage_ui extends e_admin_ui
 {
 			
-		protected $pluginTitle		= 'Contact Page';
+		protected $pluginTitle		= LAN_CP_NAME;
 		protected $pluginName		= 'contactpage';
 	//	protected $eventName		= 'contactpage-'; // remove comment to enable event triggers in admin. 		
 		protected $table			= '';
@@ -73,33 +73,33 @@ class contactpage_ui extends e_admin_ui
 
 	//	protected $preftabs        = array('General', 'Other' );
 		protected $prefs = array(
-			'contact_name'		=> array('title'=> 'Company Name [contact_name]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'contact_name'		=> array('title'=> LAN_CP_COMPANY_NAME, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>'', 'writeParms' => array('size'=>'block-level'), ),
-			'contact_email'		=> array('title'=> 'Contact Email [contact_email]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'contact_email'		=> array('title'=> LAN_CP_CONTACT_EMAIL, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>''),
-			'contact_phone'		=> array('title'=> 'Contact Phone [contact_phone]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'contact_phone'		=> array('title'=> LAN_CP_CONTACT_PHONE, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>''),
-			'contact_mobile'		=> array('title'=> 'Contact Mobile [contact_mobile]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'contact_mobile'		=> array('title'=> LAN_CP_CONTACT_MOBILE, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>''),
-			'contact_fax'		=> array('title'=> 'Contact Fax [contact_fax]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'contact_fax'		=> array('title'=> LAN_CP_CONTACT_FAX, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>''),			
-			'contact_address'		=> array('title'=> 'Contact Address [contact_address]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'contact_address'		=> array('title'=> LAN_CP_CONTACT_ADRESS, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>'', 'writeParms' => array('size'=>'block-level'), ),
 
-			'text_contact_info'		=> array('title'=> 'Text Contact Info [text_contact_info]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'text_contact_info'		=> array('title'=> LAN_CP_TEXT_CONTACT_INFO, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>''),
-			'text_business_hours'		=> array('title'=> 'Business Hours [text_business_hours]', 'tab'=>0, 'type'=>'textarea', 'data' => 'str', 
+			'text_business_hours'		=> array('title'=> LAN_CP_BUSINESS_HOURS, 'tab'=>0, 'type'=>'textarea', 'data' => 'str', 
 			'help'=>''),
-			'business_hours'		=> array('title'=> 'Business Hours [business_hours]', 'tab'=>0, 'type'=>'textarea', 'data' => 'str',
+			'business_hours'		=> array('title'=> LAN_CP_BUSINESS_HOURS2, 'tab'=>0, 'type'=>'textarea', 'data' => 'str',
 			'help'=>''),
-			'text_contact_title'		=> array('title'=> 'Contact Title [text_contact_title]', 'tab'=>0, 'type'=>'text', 'data' => 'str', 
+			'text_contact_title'		=> array('title'=> LAN_CP_CONTACT_TITLE, 'tab'=>0, 'type'=>'text', 'data' => 'str', 
 			'help'=>'', 'writeParms' => array('size'=>'block-level'), ),
-		  'text_contact_subtitle'		=> array('title'=> 'Contact Subtitle [text_contact_subtitle]', 'tab'=>0, 'type'=>'textarea', 'data' => 'str', 
+		  'text_contact_subtitle'		=> array('title'=> LAN_CP_CONTACT_SUBTITLE, 'tab'=>0, 'type'=>'textarea', 'data' => 'str', 
 			'help'=>'', 'writeParms' => array('size'=>'block-level'), ),	
-			'google_maps_embed'		=> array('title'=> 'Embed Google Map [google_maps_embed]', 'tab'=>0, 'type'=>'textarea', 'data' => 'str', 
+			'google_maps_embed'		=> array('title'=> LAN_CP_EMBED_GOOGLE_MAP, 'tab'=>0, 'type'=>'textarea', 'data' => 'str', 
 			'help'=>''),	
-			'googlemapsapikey'     => array('title' => 'Insert Google Maps API key', 'type'=>'text', 'writeParms'=>array('size'=>'block-level'),  'help'=>''),		
-			'mapmarker'     => array('title' => 'Map Marker', 'type'=>'image', 'help'=>''),		
+			'googlemapsapikey'     => array('title' => LAN_CP_INSERT_GOOGLE_MAPS_API_KEY, 'type'=>'text', 'writeParms'=>array('size'=>'block-level'),  'help'=>''),		
+			'mapmarker'     => array('title' => LAN_CP_MAP_MARKER, 'type'=>'image', 'help'=>''),		
 		); 
 
 	
@@ -171,7 +171,7 @@ class contactpage_form_ui extends e_admin_form_ui
 class mode extends e_admin_ui
 {
 			
-		protected $pluginTitle		= 'Contact Page';
+		protected $pluginTitle		= LAN_CP_NAME;
 		protected $pluginName		= '';
 	//	protected $eventName		= '-'; // remove comment to enable event triggers in admin. 		
 		protected $table			= '';
