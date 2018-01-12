@@ -1,14 +1,19 @@
 <?php
 /*
- * e107 website system
- *
- * Copyright (C) 2008-2016 e107 Inc (e107.org)
- * Released under the terms and conditions of the
- * GNU General Public License (http://www.gnu.org/licenses/gpl.txt)
- *
- */
- 
-define("LAN_PLUGIN_CPJM_NAME",		"Contact Page");
-define("LAN_PLUGIN_CPJM_DESCRIPTION", "Extended Contact Page plugin");
-
++----------------------------------------------------------------------+
+|        e107 website content management system Hungarian Language File
+|        Released under the terms and conditions of the
+|        GNU General Public License (http://gnu.org).
+|        Revision    1.1
+|        Date        10.04.2017
+|        Author      Jimako ( www.e107.sk )
+|
+|        Last Modified: 2018/01/12 10:37:20
+|
+|        $Author: Yesszus $
++-----------------------------------------------------------------------+
+*/
+define("LAN_CP_NAME", "Contact Page");
+define("LAN_CP_SUMMARY", "Extended Contact Page plugin");
+define("LAN_CP_DESCRIPTION", "Extended Contact Page plugin");
 ?>
