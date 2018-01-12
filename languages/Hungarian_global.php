@@ -13,7 +13,7 @@
 |        $Author: Yesszus $
 +-----------------------------------------------------------------------+
 */
-define("LAN_CP_NAME", "Contact Page");
-define("LAN_CP_SUMMARY", "Extended Contact Page plugin");
-define("LAN_CP_DESCRIPTION", "Extended Contact Page plugin");
+define("LAN_CP_NAME", "Kapcsolat Oldal");
+define("LAN_CP_SUMMARY", "Kiterjesztett Kapcsolat Oldal");
+define("LAN_CP_DESCRIPTION", "Kiterjesztett Kapcsolat Oldal");
 ?>
