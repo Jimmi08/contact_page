@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e107Plugin name="Contact Page Extended" lan="LAN_CP_NAME" version="1.1" date="2017-04-10" compatibility="2.0" installRequired="true" >
+<e107Plugin name="Contact Page Extended" lan="LAN_CP_NAME" version="1.2" date="2018-01-17" compatibility="2.0" installRequired="true" >
 	<author name="Jimako" url="http://www.e107.sk/" />
 	<summary lan="LAN_CP_SUMMARY">Contact page extended</summary>
 	<description lan="LAN_CP_DESCRIPTION">Contact page extended</description>
